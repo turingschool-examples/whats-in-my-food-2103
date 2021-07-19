@@ -6,7 +6,7 @@ RSpec.describe 'Foods index' do
       visit root_path
 
       fill_in :q, with: 'sweet potatoes'
-      click_on 'Ingredient Search'
+      click_on 'Search'
 
       expect(current_path).to eq '/foods'
       expect(page).to have_content "Sweet Potatoes"
