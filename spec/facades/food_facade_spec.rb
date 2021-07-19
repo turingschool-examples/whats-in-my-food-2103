@@ -6,4 +6,9 @@ RSpec.describe 'Food Facade' do
         expect(facade).to be_an Array
         expect(facade.first).to be_a Food
     end
+
+    it 'can return number of total search results' do
+        facade = FoodFacade.total_results("sweet potatoes")
+        expect(facade).to eq(45635)
+    end
 end
