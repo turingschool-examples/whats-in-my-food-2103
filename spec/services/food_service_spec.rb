@@ -6,4 +6,5 @@ RSpec.describe FoodService do
     expect(FoodService.food_search("sweet potatoes")[:totalHits]).to eq(45635)
     expect(FoodService.food_search("sweet potatoes")[:foods].count).to eq(50)
   end
+
 end

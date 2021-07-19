@@ -8,6 +8,7 @@ RSpec.describe 'Foods Index Page' do
     click_button "Search"
 
     visit foods_path
+
     expect(page).to have_content("items found")
   end
 end
