@@ -15,4 +15,12 @@ RSpec.describe 'Food Facade' do
       expect(second_sweet_potato.ingredients).to eq("SWEET POTATOES.")
     end
   end
+
+  describe '::total_hits' do
+    it 'can get total search hits' do
+      total_hits = FoodFacade.total_hits("sweet potatoes")
+
+      expect(total_hits).to eq(45635)
+    end
+  end
 end
