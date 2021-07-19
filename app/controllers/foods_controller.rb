@@ -1,7 +1,4 @@
-class WelcomeController < ApplicationController
-  def index
-  end
-
+class FoodsController < ApplicationController
   def search
     @foods = FoodFacade.search(params[:search])
   end
