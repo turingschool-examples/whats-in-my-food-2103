@@ -7,7 +7,7 @@ RSpec.describe FoodService do
 
     stub_request(:get, "https://api.nal.usda.gov/fdc/v1/foods/search?query=sweet potato&pageSize=10&api_key=#{ENV['FOOD_API_KEY']}").to_return(status: 200, body: response, headers: {})
 
-    service_response = FoodService.search(search_term)
+    service_response = FoodService.search_foods(search_term)
 
     expect(service_response).to be_an(Hash)
     expect(service_response).to have_key(:totalHits)
