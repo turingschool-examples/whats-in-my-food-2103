@@ -14,6 +14,7 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+  # require 'webmock/rspec'
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
@@ -94,3 +95,9 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+# def sweet_potatoes_stub
+#   response_body = File.read('spec/fixtures/sweet_potatoes.json')
+#   stub_request(:get, "https://api.nal.usda.gov/fdc/v1/foods/search?api_key=#{ENV['food_api']}&query=sweet%20potatoes").
+#     to_return(status: 200, body: response_body, headers: {})
+# end

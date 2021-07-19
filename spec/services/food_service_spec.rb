@@ -3,6 +3,8 @@ require 'rails_helper'
 RSpec.describe 'class methods' do
   describe '::get_food_data' do
     it 'returns food data from USDA site' do
+      # sweet_potatoes_stub
+
       response = FoodService.get_food_data('sweet potatoes')
 
       expect(response).to be_a Hash
