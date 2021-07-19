@@ -1,0 +1,34 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <%= link_to "Ingredient Search", root_path, class: "navbar-brand" %>
+  </div>
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <%= form_tag :foods, method: :get, class: "form-inline" do %>
+        <div class="form-group search-field">
+          <%= text_field_tag(:q) %>
+          <%= submit_tag "Search", class: "btn btn-primary" %>
+        </div>
+      <% end %>
+    </ul>
+  </div>
+</nav>
+
+<h3>Total Results: <%= @total_hits %></h3>
+
+<h5>Top Ten Results: </h5>
+
+<table>
+  <th>GTIN/UPC Code</th>
+  <th>Description</th>
+  <th>Brand Owner</th>
+  <th>Ingredients</th>
+  <% @top_ten_foods.each do |food| %>
+    <tr>
+      <td><%= food.gtin_upc %></td>
+      <td><%= food.description %></td>
+      <td><%= food.brand_owner %></td>
+      <td><%= food.ingredients %></td>
+    </tr>
+  <% end %>
+</table>

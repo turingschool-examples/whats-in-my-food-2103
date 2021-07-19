@@ -19,11 +19,24 @@ RSpec.describe 'Food search results page' do
     fill_in :q, with: @query
     click_button 'Search'
 
-    expect(page).to have_current_path '/foods'
+    expect(page).to have_current_path "/foods?utf8=%E2%9C%93&q=#{@query}&commit=Search"
     expect(page).to have_content("Total Results: 2075")
   end
 
   it 'shows the top ten results with GTIN/UPC, description, Brand Owner, and ingredients' do
+    fill_in :q, with: @query
+    click_button 'Search'
 
+    expect(page).to have_content("741643032903")
+    expect(page).to have_content("CHICKPEAS")
+    expect(page).to have_content("Lowe's Food Stores, Inc.")
+    expect(page).to have_content("PREPARED GARBANZO BEANS, WATER, SALT, CALCIUM CHLORIDE")
+
+    expect(page).to have_content("041415109414")
+    expect(page).to have_content("CHICKPEAS")
+    expect(page).to have_content("Publix Super Markets, Inc.")
+    expect(page).to have_content("PREPARED CHICKPEAS, WATER, SALT, CALCIUM CHLORIDE (FIRMING AGENT)")
+
+    expect(page).to have_content("Chickpeas, from dried, fat added")
   end
 end
