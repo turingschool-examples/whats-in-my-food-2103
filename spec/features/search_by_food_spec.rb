@@ -3,8 +3,8 @@ require "rails_helper"
 RSpec.describe "Food Search" do
   it "Can search for foods by ingredient" do
     visit root_path
-    fill_in :search, with: "sweet potatoes"
-    click_on :search
+    fill_in :q, with: "sweet potatoes"
+    click_on "Search"
     expect(current_path).to eq foods_path
     expect(page).to have_content("Foods found: 45635")
     expect(page).to have_css('.foods', count: 10)
