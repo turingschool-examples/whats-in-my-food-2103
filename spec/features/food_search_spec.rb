@@ -10,7 +10,7 @@ RSpec.describe 'Welcome Page' do
 
             expect(page).to have_content("45635 Results")
             expect(page).to have_content("492111402857")
-            expect(page).to have_content("sweet potatoes")
+            expect(page).to have_content("SWEET POTATOES")
             expect(page).to have_content("ARCHER FARMS")
             expect(page).to have_content("SWEET POTATOES.")
         end
