@@ -21,5 +21,14 @@ RSpec.describe FoodDataFacade do
         expect(first.owner).to eq("FRESH & EASY")
       end
     end
+
+    describe '::total_hits' do
+      it 'returns list of foods according to food query' do
+        total = FoodDataFacade.total_hits("sweet potato")
+       
+        expect(total).to be_a(Integer)
+        expect(total).to eq(45635)
+      end
+    end
   end
 end 
