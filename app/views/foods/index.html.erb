@@ -1,0 +1,13 @@
+<h1> <%= @total %> Total Results for <%= @query %></h1>
+
+<h2>Top Ten Results </h2>
+<ol>
+  <% @foods.each do |food| %>
+    <li class="food">
+      <h2>GTIN/UPC:</h2><p><%= food.code %></p>
+      <h3>Description: <%= food.description %></h3>
+      <h3>Brand Owner:</h3><p><%= food.owner %></p>
+      <h3>Ingredients:</h3><p><%= food.ingredients %></p>
+    </div><br>
+  <% end %>
+</ol>
