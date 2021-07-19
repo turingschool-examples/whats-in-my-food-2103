@@ -7,6 +7,7 @@ RSpec.describe 'The welcome page' do
 
       within 'form' do
         fill_in 'foods[q]', with: 'sweet potatoes'
+        click_button 'Search'
       end
 
       expect(current_path).to eq foods_path
