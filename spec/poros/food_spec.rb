@@ -9,9 +9,9 @@ RSpec.describe 'Food PORO' do
 
     food = Food.new(attributes)
 
-    expect(food.gtinUpc).to eq(attributes[:gtinUpc])
+    expect(food.gtin_upc).to eq(attributes[:gtinUpc])
     expect(food.description).to eq(attributes[:description])
-    expect(food.brandOwner).to eq(attributes[:brandOwner])
+    expect(food.brand_owner).to eq(attributes[:brandOwner])
     expect(food.ingredients).to eq(attributes[:ingredients])
   end
 end
