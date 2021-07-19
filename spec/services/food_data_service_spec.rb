@@ -7,7 +7,7 @@ RSpec.describe FoodDataService do
         body = FoodDataService.search('apple')
         search_array = body[:foods]
 
-        expect(body).is_a? hash
+        expect(body).is_a? Hash
         expect(search_array).is_a? Array
       end
     end
