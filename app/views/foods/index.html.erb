@@ -1,0 +1,20 @@
+<form class='form'>
+  <thead>
+    <tr>
+      <th>gtin/Upc</th>
+      <th>Description</th>
+      <th>Brand Owner</th>
+      <th>Nutrients List</th>
+    </tr>
+  </thead>
+  <tbody id='food-list-rows'>
+    <% @foods.each do |food| %>
+      <tr id='fdcId-<%=food[:fdcId]%>'>
+        <td><%=food[:gtinUpc]%></td>
+        <td><%=food[:description]%></td>
+        <td><%=food[:brandOwner]%></td>
+        <td><%= render partial: 'food_list', locals: { nutrients: food[:foodNutrients], fdicId: food[:fdcId]} %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</form>
