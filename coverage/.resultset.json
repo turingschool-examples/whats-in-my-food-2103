@@ -22,6 +22,15 @@
           null
         ]
       },
+      "/Users/ldwha/Turing/3_mod/whats-in-my-food-2103/app/controllers/foods_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/ldwha/Turing/3_mod/whats-in-my-food-2103/app/mailers/application_mailer.rb": {
         "lines": [
           0,
@@ -70,6 +79,6 @@
         }
       }
     },
-    "timestamp": 1626709430
+    "timestamp": 1626709780
   }
 }
