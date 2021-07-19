@@ -13,21 +13,18 @@ RSpec.describe 'as a user' do
     click_button "Search"
     expect(current_path).to eq("/foods")
 
-    it 'and see the total numbers of search results' do
-      expect(page).to have_content("Total Results: ")
-    end
+    # and see the total numbers of search results
+    expect(page).to have_content("Total Results: 45635")
 
-    it 'and see 10 foods containing my search term' do
-      expect(page).to have_css('single-result', count: 10)
-    end
+    #and see 10 foods containing my search term
+    expect(page).to have_css('.single-result', count: 10)
 
-    it 'for each food I should see details' do
-      within(".single_result", match: :first) do
-        expect(page).to have_content("GTIN/UPC Code: #{parsed_response[:gtinUpc]}")
-        expect(page).to have_content("Description: #{parsed_response[:description]}")
-        expect(page).to have_content("Brand Owner: #{parsed_response[:brandOwner]}")
-        expect(page).to have_content("Ingredients: #{parsed_response[:ingredients]}")
-      end
-    end
+    #for each food I should see details
+    # within(".single_result", match: :first) do
+    expect(page).to have_content("GTIN/UPC: 20042431")
+    expect(page).to have_content("Description: SWEET POTATO")
+    expect(page).to have_content("Brand Owner: FRESH & EASY")
+    expect(page).to have_content("Ingredients: SWEET POTATO, CHIPOTLE CHICKEN {COOKED CHICKEN (CHICKEN BREAST WITH RIB MEAT, CHICKEN BROTH, CONTAINS LESS THAN 2% OF: MODIFIED POTATO STARCH, GARLIC POWDER, CANOLA OIL, SOYBEAN OIL, SALT, SODIUM PHOSPHATE, CHICKEN FAT, FLAVOR), CHIPOTLE MANGO SAUCE [MANGO CHIPOTLE MARINADE (MANGO PUREE, WATER, CHIPOTLE PEPPER, ONION, SALT, BROWN SUGAR, CANOLA OIL, VINEGAR, GARLIC, LEMON JUICE CONCENTRATE, TOMATO PASTE, SPICES, RICE WINE VINEGAR, SUGAR, CILANTRO, CITRIC ACID)], WATER, CILANTRO}, MANGO SALSA (MANGO, CUCUMBER, TOMATO, LIME JUICE, MANGO PUREE, ONION, CILANTRO, SERRANO PEPPERS, SALT).")
+    # end
   end
 end

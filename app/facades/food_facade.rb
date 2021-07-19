@@ -5,4 +5,9 @@ class FoodFacade
       FoodPoro.new(result)
     end
   end
+
+  def self.total_results(search_term)
+    response = FoodService.search_foods(search_term)
+    response[:totalHits]
+  end
 end
