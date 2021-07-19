@@ -4,9 +4,10 @@ RSpec.describe 'as a user' do
   it 'I can search foods' do
     # be a user
     visit root_path
-    fill_in :search, with: "sweet potatoes"
-    click "Search"
+    fill_in :q, with: "sweet potatoes"
+    click_button "Search"
     expect(current_path).to eq("/foods")
+
     # it 'and see the total numbers of search results' do
     #   expect(page).to have_content("Total Results: ")
     # end
