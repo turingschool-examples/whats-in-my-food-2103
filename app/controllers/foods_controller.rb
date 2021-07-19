@@ -1,6 +1,6 @@
 class FoodsController < ApplicationController
   def index
-
+    @total_amount_found = FoodFacade.total_items_returned(params[:search])
   end
 
   def show
