@@ -1,8 +1,10 @@
 <h1><%= @results %></h1>
 
 <section class="container">
-    <span><p>gtinUPC#: <%= @foods.gtinUpc %></p></span>
-    <span><p>description: <%= @foods.description %></p></span>
-    <span><p>brandowner: <%= @foods.brandOwner%></p></span>
-    <span><p>ingredients: <%= @foods.ingredients%></p></span>
+  <% @foods.each do |food| %>
+    <span><p>gtinUPC#: <%= food.gtinUpc %></p></span>
+    <span><p>description: <%= food.description %></p></span>
+    <span><p>brandowner: <%= food.brandOwner%></p></span>
+    <span><p>ingredients: <%= food.ingredients%></p></span>
+  <% end %>
 </section>

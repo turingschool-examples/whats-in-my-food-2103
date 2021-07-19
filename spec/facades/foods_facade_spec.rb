@@ -5,11 +5,12 @@ RSpec.describe FoodsFacade do
     it "gets food details", :vcr do
       details = FoodsFacade.foods('Sweet potatoes')
 
-      expect(details).to be_an(FoodObject)
-      expect(details.gtinUpc).to be_an(Integer)
-      expect(details.description).to be_a(String)
-      expect(details.brandOwner).to be_a(String)
-      expect(details.ingredients).to be_a(String)
+      expect(details).to be_an(Array)
+      expect(details.first).to be_an(Food)
+      expect(details.first.gtinUpc).to be_an(String)
+      expect(details.first.description).to be_a(String)
+      expect(details.first.brandOwner).to be_a(String)
+      expect(details.first.ingredients).to be_a(String)
     end
 
     it 'gets results count', :vcr do
@@ -20,5 +21,3 @@ RSpec.describe FoodsFacade do
     end
   end
 end
-
-#test
