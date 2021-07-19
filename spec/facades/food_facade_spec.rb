@@ -1,15 +1,15 @@
 require 'rails_helper'
 
-describe 'MovieFacade' do
+describe 'FoodFacade' do
   it 'can facilitate movie title search' do
-    response_body_1 = File.open("#{Rails.root}/spec/fixtures/moviedb_api/star_wars_search_results_pg_1.json")
-    response_body_2 = File.open("#{Rails.root}/spec/fixtures/moviedb_api/star_wars_search_results_pg_2.json")
+    response = File.read("#{Rails.root}/spec/fixtures/food_api/sweet_potato_10_results_search.json")
 
-    make_request(:get, "3/search/movie?api_key=#{ENV['MOVIE_API_KEY']}&query=star%20wars", response_body_1)
-    make_request(:get, "3/search/movie?api_key=#{ENV['MOVIE_API_KEY']}&query=star%20wars&page=2", response_body_2)
+    stub_request(:get, "https://api.nal.usda.gov/fdc/v1/foods/search?query=sweet potato&pageSize=10&api_key=#{ENV['FOOD_API_KEY']}").to_return(status: 200, body: response, headers: {})
 
-    star_wars_search = MovieFacade.search_by_title('star wars')
-    expect(star_wars_search).to be_an(Array)
-    expect(star_wars_search.size).to eq(40)
-    expect(star_wars_search.first).to be_an_instance_of(MoviePoro)
+    sweet_potato_search = FoodFacade.search_by_title('sweet potato')
+    expect(sweet_potato_search).to be_an(Array)
+    expect(sweet_potato_search.size).to eq(10)
+    expect(sweet_potato_search.first).to be_an_instance_of(FoodPoro)
   end
+end
+s
