@@ -29,5 +29,19 @@ RSpec.describe 'Search for foods' do
     expect(page).to have_content('Brand Owner')
     expect(page).to have_content('ingredient')
 
+    
+    response_body = File.read('spec/fixtures/senators.json')
+
+    stub_request(:get, "https://api.propublica.org/congress/v1/117/senate/members.json").
+         to_return(status: 200, body: response_body, headers: {})
+
+    visit root_path
+
+    fill_in :search, with: 'Boozman'
+    click_button 'Search'
+
+    expect(page.status_code).to eq 200
+    expect(page).to have_content('Senator John Boozman')
+    expect(page).to have_content("Twitter Handle: JohnBoozman")
   end
 end
