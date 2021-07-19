@@ -15,12 +15,19 @@ RSpec.describe FoodFacade do
 
       results = FoodFacade.ingredient_search('sweet potatoes')
 
-      expect(response).to be_an Array
-      expect(response.first).to be_a Food
-      expect(response.first.description).to eq 'SWEET POTATOES'
-      expect(response.first.brand).to eq "ARCHER FARMS"
-      expect(response.first.ingredients).to eq "SWEET POTATOES."
-      expect(response.first.upc_code).to eq "492111402857"
+      expect(results).to be_a Hash
+      
+      expect(results).to have_key :total_result_count
+      expect(results[:total_result_count]).to eq 45635
+
+      expect(results).to have_key :top_ten_results
+      expect(results[:top_ten_results]).to be_an Array
+
+      expect(results[:top_ten_results].first).to be_a Food
+      expect(results[:top_ten_results].first.description).to eq 'SWEET POTATOES'
+      expect(results[:top_ten_results].first.brand).to eq "ARCHER FARMS"
+      expect(results[:top_ten_results].first.ingredients).to eq "SWEET POTATOES."
+      expect(results[:top_ten_results].first.upc_code).to eq "492111402857"
     end
   end
 end

@@ -1,5 +1,7 @@
 <h1>Search Results</h1>
 
+<h3>Total results: <%= @result_count %></h3>
+
 <% @foods.each do |food| %>
   <h3><%= food.description %></h3>
   <p>Ingredients: <%= food.ingredients %></p>
