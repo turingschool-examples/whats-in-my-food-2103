@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nal.usda.gov/fdc/v1/foods/search?api_key=<FOOD_API>&query=alsdjfalsdf
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.5.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Mon, 19 Jul 2021 16:54:40 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3594'
+      X-Frame-Options:
+      - sameorigin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      - max-age=63072000; includeSubDomains; preload
+      Age:
+      - '0'
+      Via:
+      - https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST,  GET, OPTIONS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"totalHits":0,"currentPage":1,"totalPages":0,"pageList":[],"foodSearchCriteria":{"query":"alsdjfalsdf","generalSearchInput":"alsdjfalsdf","pageNumber":1,"numberOfResultsPerPage":50,"pageSize":50,"requireAllWords":false},"foods":[],"aggregations":{"dataType":{},"nutrients":{}}}'
+  recorded_at: Mon, 19 Jul 2021 16:54:40 GMT
+recorded_with: VCR 6.0.0

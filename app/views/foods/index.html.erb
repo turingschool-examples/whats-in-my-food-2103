@@ -1,0 +1,13 @@
+<h1>Search Results<h2>
+<h3>Total Results: <%= number_with_delimiter(@foods[0], :delimiter => ',') %> </h3>
+
+<ol>
+  <% @foods[1].each do |food| %>
+      <li><ul>Food:
+        <li>GTIN/UPC: <%= food.gtin_upc %> </li>
+        <li>Description: <%= food.description %> </li>
+        <li>Brand Owner: <%= food.brand_owner%> </li>
+        <li>Ingredients: <%= food.ingredients %> </li>
+      </ul></li>
+  <% end %>
+</ol>

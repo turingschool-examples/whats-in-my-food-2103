@@ -28,7 +28,7 @@ RSpec.describe 'searching using ingredients' do
           expect(page).to have_content('Description:', count: 10)
           expect(page).to have_content('Brand Owner:', count: 10)
           expect(page).to have_content('Ingredients:', count: 10)
-          expect(page).to have_content('Archer Farms')
+          expect(page).to have_content('ARCHER FARMS')
           expect(page).to have_content('492111402857')
           expect(page).to have_content('SWEET POTATOES')
         end
