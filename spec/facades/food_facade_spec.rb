@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'FoodFacade' do
-  it 'can facilitate movie title search' do
+  it 'can facilitate food search' do
     response = File.read("#{Rails.root}/spec/fixtures/food_api/sweet_potato_10_results_search.json")
 
     stub_request(:get, "https://api.nal.usda.gov/fdc/v1/foods/search?query=sweet potato&pageSize=10&api_key=#{ENV['FOOD_API_KEY']}").to_return(status: 200, body: response, headers: {})
