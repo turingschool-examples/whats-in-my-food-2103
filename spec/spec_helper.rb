@@ -13,6 +13,8 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require 'webmock/rspec'
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
@@ -93,4 +95,10 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+end
+
+def stub_get_food_info
+  response_body = File.read('spec/fixtures/search_for_sweet_potato.json')
+  stub_request(:get, "https://api.nal.usda.gov/fdc/v1/foods/search?api_key=#{ENV['PARKS_API_KEY']}&query=#sweet+potato&Size=10&brandOwner").
+    to_return(status: 200, body: response_body, headers: {})
 end
