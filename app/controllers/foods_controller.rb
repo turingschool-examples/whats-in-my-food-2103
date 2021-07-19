@@ -1,5 +1,4 @@
 class FoodsController < ApplicationController
-
   def search_results
     results = FoodFacade.search(params[:q])
     @total_hits = results[:total_hits]

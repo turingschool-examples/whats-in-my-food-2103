@@ -55,7 +55,5 @@ RSpec.describe 'Food search results page' do
     expect(page).to_not have_content("Description")
     expect(page).to_not have_content("Brand Owner")
     expect(page).to_not have_content("Ingredients")
-
   end
-
 end

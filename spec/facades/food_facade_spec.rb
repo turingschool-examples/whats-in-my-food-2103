@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'Food Facade' do
-
   it '.search returns total count and details of top 10 search results from query' do
     query = "chickpeas"
     response_body = File.read('spec/fixtures/food_search.json')
