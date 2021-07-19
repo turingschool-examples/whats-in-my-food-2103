@@ -26,6 +26,6 @@ Then I should see a total of the number of items returned by the search.
 Then I should see a list of TEN foods that contain the ingredient "sweet potatoes"
 And for each of the foods I should see:
 - The food's GTIN/UPC code
-- The food's description
+- The food's descriptionf
 - The food's Brand Owner
 - The food's ingredients
