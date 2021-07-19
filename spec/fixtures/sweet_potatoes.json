@@ -25,13 +25,13 @@
     "foods": [
         {
             "fdcId": 535125,
-            "description": "SWEET POTATOES",
+            "description": "SWEET POTATOES", # get this
             "lowercaseDescription": "sweet potatoes",
             "dataType": "Branded",
-            "gtinUpc": "492111402857",
+            "gtinUpc": "492111402857", # get this
             "publishedDate": "2019-04-01",
-            "brandOwner": "ARCHER FARMS",
-            "ingredients": "SWEET POTATOES.",
+            "brandOwner": "ARCHER FARMS", # get this
+            "ingredients": "SWEET POTATOES.", # get this
             "marketCountry": "United States",
             "foodCategory": "Frozen Prepared Sides",
             "allHighlightFields": "<b>Ingredients</b>: <em>SWEET</em> <em>POTATOES</em>.",
