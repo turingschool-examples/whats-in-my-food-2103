@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'FDC API Service' do
   before :each do
-    query = "chamomile"
+    query = "chickpeas"
     response_body = File.read('spec/fixtures/food_search.json')
     stub_request(:get, "https://api.nal.usda.gov/fdc/v1/foods/search?query=#{query}&pageSize=10&api_key=#{ENV['FDC_API_KEY']}")
       .to_return(status: 200, body: response_body, headers: {})
