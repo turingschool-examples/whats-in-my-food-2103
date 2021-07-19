@@ -1,0 +1,321 @@
+{
+    "totalHits": 45635,
+    "currentPage": 1,
+    "totalPages": 22818,
+    "pageList": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+    ],
+    "foodSearchCriteria": {
+        "query": "sweet potato",
+        "generalSearchInput": "sweet potato",
+        "pageNumber": 1,
+        "numberOfResultsPerPage": 50,
+        "pageSize": 2,
+        "requireAllWords": false
+    },
+    "foods": [
+        {
+            "fdcId": 477475,
+            "description": "SWEET POTATO",
+            "lowercaseDescription": "sweet potato",
+            "dataType": "Branded",
+            "gtinUpc": "20042431",
+            "publishedDate": "2019-04-01",
+            "brandOwner": "FRESH & EASY",
+            "ingredients": "SWEET POTATO, CHIPOTLE CHICKEN {COOKED CHICKEN (CHICKEN BREAST WITH RIB MEAT, CHICKEN BROTH, CONTAINS LESS THAN 2% OF: MODIFIED POTATO STARCH, GARLIC POWDER, CANOLA OIL, SOYBEAN OIL, SALT, SODIUM PHOSPHATE, CHICKEN FAT, FLAVOR), CHIPOTLE MANGO SAUCE [MANGO CHIPOTLE MARINADE (MANGO PUREE, WATER, CHIPOTLE PEPPER, ONION, SALT, BROWN SUGAR, CANOLA OIL, VINEGAR, GARLIC, LEMON JUICE CONCENTRATE, TOMATO PASTE, SPICES, RICE WINE VINEGAR, SUGAR, CILANTRO, CITRIC ACID)], WATER, CILANTRO}, MANGO SALSA (MANGO, CUCUMBER, TOMATO, LIME JUICE, MANGO PUREE, ONION, CILANTRO, SERRANO PEPPERS, SALT).",
+            "marketCountry": "United States",
+            "foodCategory": "Other Deli",
+            "allHighlightFields": "<b>Ingredients</b>: <em>SWEET</em> <em>POTATO</em>, CHIPOTLE CHICKEN {COOKED CHICKEN (CHICKEN BREAST WITH RIB MEAT, CHICKEN BROTH",
+            "score": 1066.7172,
+            "foodNutrients": [
+                {
+                    "nutrientId": 1087,
+                    "nutrientName": "Calcium, Ca",
+                    "nutrientNumber": "301",
+                    "unitName": "MG",
+                    "derivationCode": "LCCD",
+                    "derivationDescription": "Calculated from a daily value percentage per serving size measure",
+                    "value": 26.0
+                },
+                {
+                    "nutrientId": 1089,
+                    "nutrientName": "Iron, Fe",
+                    "nutrientNumber": "303",
+                    "unitName": "MG",
+                    "derivationCode": "LCCD",
+                    "derivationDescription": "Calculated from a daily value percentage per serving size measure",
+                    "value": 0.58
+                },
+                {
+                    "nutrientId": 1104,
+                    "nutrientName": "Vitamin A, IU",
+                    "nutrientNumber": "318",
+                    "unitName": "IU",
+                    "derivationCode": "LCCD",
+                    "derivationDescription": "Calculated from a daily value percentage per serving size measure",
+                    "value": 5290.0
+                },
+                {
+                    "nutrientId": 1162,
+                    "nutrientName": "Vitamin C, total ascorbic acid",
+                    "nutrientNumber": "401",
+                    "unitName": "MG",
+                    "derivationCode": "LCCD",
+                    "derivationDescription": "Calculated from a daily value percentage per serving size measure",
+                    "value": 4.8
+                },
+                {
+                    "nutrientId": 1003,
+                    "nutrientName": "Protein",
+                    "nutrientNumber": "203",
+                    "unitName": "G",
+                    "derivationCode": "LCCS",
+                    "derivationDescription": "Calculated from value per serving size measure",
+                    "value": 5.45
+                },
+                {
+                    "nutrientId": 1004,
+                    "nutrientName": "Total lipid (fat)",
+                    "nutrientNumber": "204",
+                    "unitName": "G",
+                    "derivationCode": "LCCS",
+                    "derivationDescription": "Calculated from value per serving size measure",
+                    "value": 1.28
+                },
+                {
+                    "nutrientId": 1005,
+                    "nutrientName": "Carbohydrate, by difference",
+                    "nutrientNumber": "205",
+                    "unitName": "G",
+                    "derivationCode": "LCCS",
+                    "derivationDescription": "Calculated from value per serving size measure",
+                    "value": 16.4
+                },
+                {
+                    "nutrientId": 1008,
+                    "nutrientName": "Energy",
+                    "nutrientNumber": "208",
+                    "unitName": "KCAL",
+                    "derivationCode": "LCCS",
+                    "derivationDescription": "Calculated from value per serving size measure",
+                    "value": 106
+                },
+                {
+                    "nutrientId": 2000,
+                    "nutrientName": "Sugars, total including NLEA",
+                    "nutrientNumber": "269",
+                    "unitName": "G",
+                    "derivationCode": "LCCS",
+                    "derivationDescription": "Calculated from value per serving size measure",
+                    "value": 4.17
+                },
+                {
+                    "nutrientId": 1079,
+                    "nutrientName": "Fiber, total dietary",
+                    "nutrientNumber": "291",
+                    "unitName": "G",
+                    "derivationCode": "LCCS",
+                    "derivationDescription": "Calculated from value per serving size measure",
+                    "value": 1.9
+                },
+                {
+                    "nutrientId": 1093,
+                    "nutrientName": "Sodium, Na",
+                    "nutrientNumber": "307",
+                    "unitName": "MG",
+                    "derivationCode": "LCCS",
+                    "derivationDescription": "Calculated from value per serving size measure",
+                    "value": 173
+                },
+                {
+                    "nutrientId": 1253,
+                    "nutrientName": "Cholesterol",
+                    "nutrientNumber": "601",
+                    "unitName": "MG",
+                    "derivationCode": "LCCS",
+                    "derivationDescription": "Calculated from value per serving size measure",
+                    "value": 14.0
+                },
+                {
+                    "nutrientId": 1257,
+                    "nutrientName": "Fatty acids, total trans",
+                    "nutrientNumber": "605",
+                    "unitName": "G",
+                    "derivationCode": "LCCS",
+                    "derivationDescription": "Calculated from value per serving size measure",
+                    "value": 0.0
+                },
+                {
+                    "nutrientId": 1258,
+                    "nutrientName": "Fatty acids, total saturated",
+                    "nutrientNumber": "606",
+                    "unitName": "G",
+                    "derivationCode": "LCCS",
+                    "derivationDescription": "Calculated from value per serving size measure",
+                    "value": 0.32
+                }
+            ]
+        },
+        {
+            "fdcId": 1570672,
+            "description": "SWEET POTATO",
+            "lowercaseDescription": "sweet potato",
+            "dataType": "Branded",
+            "gtinUpc": "085239389508",
+            "publishedDate": "2021-03-19",
+            "brandOwner": "Target Stores",
+            "brandName": "ARCHER FARMS",
+            "ingredients": "WATER, WHEAT FLOUR, SWEET POTATO PUREE, POTATO STARCH, POTATO FLAKES (POTATOES, MONO AND DIGLYCERIDES OF FATTY ACIDS, NATURAL FLAVOR), RICE FLOUR, SUGAR, LACTIC ACID, SALT, POTASSIUM SORBATE (PRESERVATIVE), NATURAL FLAVOR.",
+            "marketCountry": "United States",
+            "foodCategory": "Pasta by Shape & Type",
+            "allHighlightFields": "<b>Ingredients</b>: WATER, WHEAT FLOUR, <em>SWEET</em> <em>POTATO</em> PUREE, <em>POTATO</em> STARCH, <em>POTATO</em> FLAKES (<em>POTATOES</em>, MONO",
+            "score": 1066.7172,
+            "foodNutrients": [
+                {
+                    "nutrientId": 1003,
+                    "nutrientName": "Protein",
+                    "nutrientNumber": "203",
+                    "unitName": "G",
+                    "derivationCode": "LCCS",
+                    "derivationDescription": "Calculated from value per serving size measure",
+                    "value": 3.33
+                },
+                {
+                    "nutrientId": 1004,
+                    "nutrientName": "Total lipid (fat)",
+                    "nutrientNumber": "204",
+                    "unitName": "G",
+                    "derivationCode": "LCCS",
+                    "derivationDescription": "Calculated from value per serving size measure",
+                    "value": 0.42
+                },
+                {
+                    "nutrientId": 1005,
+                    "nutrientName": "Carbohydrate, by difference",
+                    "nutrientNumber": "205",
+                    "unitName": "G",
+                    "derivationCode": "LCCS",
+                    "derivationDescription": "Calculated from value per serving size measure",
+                    "value": 38.3
+                },
+                {
+                    "nutrientId": 1008,
+                    "nutrientName": "Energy",
+                    "nutrientNumber": "208",
+                    "unitName": "KCAL",
+                    "derivationCode": "LCCS",
+                    "derivationDescription": "Calculated from value per serving size measure",
+                    "value": 167
+                },
+                {
+                    "nutrientId": 2000,
+                    "nutrientName": "Sugars, total including NLEA",
+                    "nutrientNumber": "269",
+                    "unitName": "G",
+                    "derivationCode": "LCCS",
+                    "derivationDescription": "Calculated from value per serving size measure",
+                    "value": 2.5
+                },
+                {
+                    "nutrientId": 1079,
+                    "nutrientName": "Fiber, total dietary",
+                    "nutrientNumber": "291",
+                    "unitName": "G",
+                    "derivationCode": "LCCS",
+                    "derivationDescription": "Calculated from value per serving size measure",
+                    "value": 2.5
+                },
+                {
+                    "nutrientId": 1087,
+                    "nutrientName": "Calcium, Ca",
+                    "nutrientNumber": "301",
+                    "unitName": "MG",
+                    "derivationCode": "LCCD",
+                    "derivationDescription": "Calculated from a daily value percentage per serving size measure",
+                    "value": 17.0
+                },
+                {
+                    "nutrientId": 1089,
+                    "nutrientName": "Iron, Fe",
+                    "nutrientNumber": "303",
+                    "unitName": "MG",
+                    "derivationCode": "LCCD",
+                    "derivationDescription": "Calculated from a daily value percentage per serving size measure",
+                    "value": 0.3
+                },
+                {
+                    "nutrientId": 1093,
+                    "nutrientName": "Sodium, Na",
+                    "nutrientNumber": "307",
+                    "unitName": "MG",
+                    "derivationCode": "LCCS",
+                    "derivationDescription": "Calculated from value per serving size measure",
+                    "value": 550
+                },
+                {
+                    "nutrientId": 1104,
+                    "nutrientName": "Vitamin A, IU",
+                    "nutrientNumber": "318",
+                    "unitName": "IU",
+                    "derivationCode": "LCCD",
+                    "derivationDescription": "Calculated from a daily value percentage per serving size measure",
+                    "value": 0.0
+                },
+                {
+                    "nutrientId": 1162,
+                    "nutrientName": "Vitamin C, total ascorbic acid",
+                    "nutrientNumber": "401",
+                    "unitName": "MG",
+                    "derivationCode": "LCCD",
+                    "derivationDescription": "Calculated from a daily value percentage per serving size measure",
+                    "value": 0.0
+                },
+                {
+                    "nutrientId": 1253,
+                    "nutrientName": "Cholesterol",
+                    "nutrientNumber": "601",
+                    "unitName": "MG",
+                    "derivationCode": "LCCD",
+                    "derivationDescription": "Calculated from a daily value percentage per serving size measure",
+                    "value": 0.0
+                },
+                {
+                    "nutrientId": 1257,
+                    "nutrientName": "Fatty acids, total trans",
+                    "nutrientNumber": "605",
+                    "unitName": "G",
+                    "derivationCode": "LCCS",
+                    "derivationDescription": "Calculated from value per serving size measure",
+                    "value": 0.0
+                },
+                {
+                    "nutrientId": 1258,
+                    "nutrientName": "Fatty acids, total saturated",
+                    "nutrientNumber": "606",
+                    "unitName": "G",
+                    "derivationCode": "LCCD",
+                    "derivationDescription": "Calculated from a daily value percentage per serving size measure",
+                    "value": 0.0
+                }
+            ]
+        }
+    ],
+    "aggregations": {
+        "dataType": {
+            "Branded": 44397,
+            "Survey (FNDDS)": 635,
+            "SR Legacy": 601,
+            "Foundation": 2
+        },
+        "nutrients": {}
+    }
+}
