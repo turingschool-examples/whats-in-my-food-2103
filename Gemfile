@@ -17,7 +17,13 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap'
 gem 'faraday'
 gem 'figaro'
+gem 'oj'
+# The gem I made to create my API service, otherwise I would have just referenced it from our project.
+gem 'red-api'
 
+# Front end gems
+gem 'bootstrap', '>= 4.0.0'
+gem 'jquery-rails'
 
 group :development, :test do
   gem 'pry'
@@ -28,6 +34,7 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov'
+  gem 'webmock'
 end
 
 group :development do
