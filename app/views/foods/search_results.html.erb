@@ -4,17 +4,19 @@
 
 <h5>Top Ten Results: </h5>
 
-<table>
-  <th>GTIN/UPC Code</th>
-  <th>Description</th>
-  <th>Brand Owner</th>
-  <th>Ingredients</th>
-  <% @top_ten_foods.each do |food| %>
-    <tr>
-      <td><%= food.gtin_upc %></td>
-      <td><%= food.description %></td>
-      <td><%= food.brand_owner %></td>
-      <td><%= food.ingredients %></td>
-    </tr>
-  <% end %>
-</table>
+<% if @top_ten_foods.length > 0 %>
+  <table>
+    <th>GTIN/UPC Code</th>
+    <th>Description</th>
+    <th>Brand Owner</th>
+    <th>Ingredients</th>
+    <% @top_ten_foods.each do |food| %>
+      <tr>
+        <td><%= food.gtin_upc %></td>
+        <td><%= food.description %></td>
+        <td><%= food.brand_owner %></td>
+        <td><%= food.ingredients %></td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
