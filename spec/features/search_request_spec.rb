@@ -8,6 +8,7 @@ RSpec.describe 'food search' do
     click_on "Search"
 
     expect(current_path).to eq('/foods')
+    expect(page).to have_content("Number of Results: 10000 +")
     expect(page).to have_content("GTIN/UPC: 492111402857")
     expect(page).to have_content("Description: SWEET POTATOES")
     expect(page).to have_content("Brand Owner: ARCHER FARMS")
