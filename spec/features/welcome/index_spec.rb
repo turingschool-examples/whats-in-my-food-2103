@@ -20,7 +20,7 @@ RSpec.describe 'welcome page', type: :feature do
 
       click_on "Search"
 
-      expect(current_path).to eq(food_path)
+      expect(current_path).to eq('/foods')
     end
   end
 end
