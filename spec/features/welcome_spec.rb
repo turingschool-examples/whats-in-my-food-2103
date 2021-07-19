@@ -6,7 +6,7 @@ RSpec.describe 'The welcome page' do
       visit '/'
 
       within 'form' do
-        fill_in 'foods[q]', with: 'sweet potatoes'
+        fill_in 'q', with: 'sweet potatoes'
         click_button 'Search'
       end
 
