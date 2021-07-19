@@ -22,17 +22,5 @@ RSpec.describe 'Foods page' do
       expect(page).to have_content('Your Results')
     end
   end
-
-  it 'only displays 10' do
-    VCR.use_cassette('food_search_view', :record => :new_episodes) do
-      visit '/'
-      fill_in 'q', with: 'sweet potatoes'
-      click_button 'Search'
-
-      expect(current_path).to eq '/foods'
-    end
-  end
-
-
-
+  # Test for number of paragraph elements
 end

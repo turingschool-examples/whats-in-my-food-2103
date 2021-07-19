@@ -16,6 +16,7 @@ RSpec.describe FoodFacade do
         # expect(food.brand).not_to eq nil
         # expect(food.description).not_to eq nil
         # expect(food.ingredients).not_to eq nil
+        # Include validation on initialize which skips incomplete objects
       end
     end
   end
