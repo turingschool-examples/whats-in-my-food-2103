@@ -11,14 +11,17 @@ RSpec.describe 'Foods Index' do
       expect(current_path).to eq(foods_path)
 
       expect(page).to have_content("Data on sweet potatoes")
-      expect(page).to have_content("Total search results for sweet potatoes is:")
+      expect(page).to have_content("Total number of items for sweet potatoes is: 45635")
 
       sweet_potatoes_list = find("#ten_food_results").all("div")
       expect(sweet_potatoes_list.size).to eq(10)
 
-      # within("#ten_food_results") do
-      #   expect().to eq()
-      # end
+      within("#ten_food_results") do
+        expect(page).to have_content("GTIN/UPC code: 492111402857")
+        expect(page).to have_content("Description: SWEET POTATOES")
+        expect(page).to have_content("Brand Owner: ARCHER FARMS")
+        expect(page).to have_content("Ingredient(s): SWEET POTATOES.")
+      end
     end
   end
 end
