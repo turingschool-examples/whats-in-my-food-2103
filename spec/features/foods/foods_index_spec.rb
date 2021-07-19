@@ -1,7 +1,21 @@
 require 'rails_helper'
 
 RSpec.describe 'Foods index' do
+  describe 'search for foods with ingredient' do
+    it 'returns a list of foods (+ details) containing the ingredient' do
+      visit root_path
 
+      fill_in :q, with: 'sweet potatoes'
+      click_on 'Ingredient Search'
+
+      expect(current_path).to eq '/foods'
+      expect(page).to have_content "Sweet Potatoes"
+      expect(page).to have_content "ARCHER FARMS"
+      expect(page).to have_content "492111402857"
+    end
+
+    it 'only returns the top 10 results'
+  end
 end
 
 # As a user,
@@ -18,3 +32,4 @@ end
 # - The food's description
 # - The food's Brand Owner
 # - The food's ingredients
+
