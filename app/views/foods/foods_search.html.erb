@@ -1,0 +1,11 @@
+<h1>Search Results</h1>
+
+<% @foods.each do |food| %>
+  <%= food.total_hits%>
+<% end %>
+
+<% @foods.each do |food| %>
+  <% food.foods_list.first(10).each do |item|%>
+    <%= item[:description] %>
+    <%= item[:foodCode] %>
+<% end %>
