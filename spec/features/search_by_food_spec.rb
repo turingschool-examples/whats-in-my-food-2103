@@ -8,7 +8,7 @@ RSpec.describe "Food Search" do
     expect(current_path).to eq foods_path
     expect(page).to have_content("Foods found: 45635")
     expect(page).to have_css('.foods', count: 10)
-    within(first('.parks')) do
+    within(first('.foods')) do
       expect(page).to have_content("GTIN/UPC code: 20042431")
       expect(page).to have_content("Description: SWEET POTATO")
       expect(page).to have_content("Brand Owner: FRESH & EASY")

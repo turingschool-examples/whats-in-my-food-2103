@@ -1,1 +1,9 @@
-<h1>Foods Found: </h1>
+<h1>Foods Found: <%= @foods.count %> </h1>
+<% @foods.each do |food| %>
+  <ul class="foods">
+    <ul GTIN/UPC code: <%= food.code %> </ul>
+    <ul Description: <%= food.description %> </ul>
+    <ul Brand Owner: <%= food.brandowner %> </ul>
+    <ul Ingredients: <%= food.ingredients %> </ul>
+  </ul>
+<% end %>
