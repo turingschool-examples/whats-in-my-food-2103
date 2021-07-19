@@ -1,6 +1,6 @@
 <h1>Your query found <%= @foods.total_hits %> results for <%= @q %></h1>
 
-<% @foods.foods.each do |food| %>
+<% @foods.foods(10).each do |food| %>
 <div class="food">
   <h4>Brand Owner: <%= food.brand_owner %></h4>
   <ul>
