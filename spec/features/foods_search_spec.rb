@@ -50,6 +50,7 @@ RSpec.describe 'Food search results page' do
     click_button 'Search'
 
     expect(page).to have_content("Total Results: 0")
+    expect(page).to have_content("No results to display.")
     expect(page).to_not have_content("GTIN/UPC Code")
     expect(page).to_not have_content("Description")
     expect(page).to_not have_content("Brand Owner")
