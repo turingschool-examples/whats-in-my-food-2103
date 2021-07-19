@@ -1,10 +1,12 @@
 <h1>Your query found <%= @foods.total_hits %> results for <%= @q %></h1>
 
 <% @foods.foods.each do |food| %>
+<div class="food">
   <h4>Brand Owner: <%= food.brand_owner %></h4>
   <ul>
     <li>GTIN/UPC: <%= food.gtin_upc %></li>
     <li>Description: <%= food.description %></li>
     <li>Ingredients: <%= food.ingredients %></li>
   </ul>
+</div>
 <% end %>

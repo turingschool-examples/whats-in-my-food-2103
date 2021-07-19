@@ -19,6 +19,13 @@ RSpec.describe '/foods', :vcr do
     expect(page).to have_content('Ingredients: ')
     # count elememts on page only ten
   end
+
+  it 'should only have 10 items on page' do
+    visit '/'
+    fill_in 'q', with: 'tumeric'
+    click_on 'Search'
+    expect(find_all('.food').size).to eq 10
+  end
 end
 
 RSpec.describe 'Foods', :vcr do
