@@ -12,10 +12,4 @@ class Food
     @ingredients = json[:ingredients]
     @total_results = total_results
   end
-
-  # def ingredient_list(json)
-  #   json[:ingredients].map do |ingredient|
-  #     ingredient
-  #   end
-  # end
 end

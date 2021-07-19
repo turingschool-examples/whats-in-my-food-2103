@@ -1,4 +1,4 @@
-<h1>Total Results: <%=  %></h1>
+<h1>Total Results: <%= @foods[0].total_results %></h1>
 
 <% @foods.each do |food| %>
   <p>UPC: <%= food.upc %></p>
