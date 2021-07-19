@@ -9,6 +9,10 @@ RSpec.describe FoodDataService do
 
         expect(body).is_a? Hash
         expect(search_array).is_a? Array
+        expect(search_array.first).to have_key(:gtinUpc)
+        expect(search_array.first).to have_key(:description)
+        expect(search_array.first).to have_key(:ingredients)
+        expect(search_array.first).to have_key(:brandOwner)
       end
     end
   end
