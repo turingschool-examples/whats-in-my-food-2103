@@ -1,6 +1,6 @@
 class FoodService
   def self.call_for_food(food)
-    response = conn.get("/fdc/v1/foods/search?api_key=#{ENV['PARKS_API_KEY']}&query=#{produce_item}&Size=10&brandOwner")
+    response = conn.get("/fdc/v1/foods/search?api_key=#{ENV['PARKS_API_KEY']}&query=#{food}&Size=10&brandOwner")
     parse_json(response)
   end
 
