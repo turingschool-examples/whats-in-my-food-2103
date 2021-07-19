@@ -22,9 +22,9 @@ RSpec.describe FoodDataFacade do
       end
     end
 
-    describe '::total_hits' do
-      it 'returns list of foods according to food query' do
-        total = FoodDataFacade.total_hits("sweet potato")
+    describe '::total_results' do
+      it 'returns total number of results from search' do
+        total = FoodDataFacade.total_results("sweet potato")
        
         expect(total).to be_a(Integer)
         expect(total).to eq(45635)
