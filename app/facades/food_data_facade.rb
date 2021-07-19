@@ -7,4 +7,8 @@ class FoodDataFacade
       FoodDataDetails.new(food)
     end
   end
+
+  def self.total_results(query)
+    FoodDataService.search_foods(query)[:totalHits]
+  end
 end
