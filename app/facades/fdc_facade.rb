@@ -1,12 +1,10 @@
 class FdcFacade
   def self.get_search_results(food)
-    json = FdcAPI.food_search(food)
+    json = FdcAPIService.food_search(food)
     total_results = json[:totalHits]
-
+    binding.pry
     food_objects = json[:foods].map do |food|
       Food.new(food, total_results)
     end
-
-    # food_objects[0..9]
   end
 end
