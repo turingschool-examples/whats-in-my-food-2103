@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'FDC API' do
-  it 'returns all foods that match the search query' do
+  it 'returns food data that matches the search query' do
     response_body = File.open('spec/fixtures/sweet_potatoes.json')
 
     stub_request(:get, "https://api.nal.usda.gov/fdc/v1/foods/search?api_key=#{ENV['api_key']}&pageSize=10&query=sweet potatoes").
