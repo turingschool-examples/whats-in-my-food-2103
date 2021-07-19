@@ -12,4 +12,3 @@ describe 'FoodFacade' do
     expect(sweet_potato_search.first).to be_an_instance_of(FoodPoro)
   end
 end
-s
