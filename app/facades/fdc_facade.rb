@@ -6,5 +6,7 @@ class FdcFacade
     food_objects = json[:foods].map do |food|
       Food.new(food, total_results)
     end
+
+    # food_objects[0..9]
   end
 end
