@@ -1,0 +1,75 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/ldwha/Turing/3_mod/whats-in-my-food-2103/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/ldwha/Turing/3_mod/whats-in-my-food-2103/app/controllers/welcome_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/ldwha/Turing/3_mod/whats-in-my-food-2103/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/ldwha/Turing/3_mod/whats-in-my-food-2103/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/ldwha/Turing/3_mod/whats-in-my-food-2103/app/models/application_record.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/ldwha/Turing/3_mod/whats-in-my-food-2103/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/ldwha/Turing/3_mod/whats-in-my-food-2103/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/ldwha/Turing/3_mod/whats-in-my-food-2103/app/channels/application_cable/channel.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1626709430
+  }
+}
