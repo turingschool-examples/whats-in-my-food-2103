@@ -7,7 +7,7 @@ RSpec.describe 'FDC API' do
     to_return(status: 200, body: response_body, headers: {})
 
     response = FdcAPI.food_search('sweet_potatoes')
-
+    binding.pry
     expect(response[:foods].first[:gtinUpc]).to eq('492111402857')
     expect(response[:foods].first[:description]).to eq('SWEET POTATOES')
     expect(response[:foods].first[:brandOwner]).to eq('ARCHER FARMS')
