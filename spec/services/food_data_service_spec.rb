@@ -12,10 +12,12 @@ RSpec.describe FoodDataService do
       it 'returns list of foods that include the query keyword' do
         VCR.use_cassette("sweet_potato_search") do
           response = FoodDataService.search_foods("sweet potato")
-          require 'pry'; binding.pry
-          expect(response).to have_key(:total)
-          expect(response).to have_key(:limit)
-          expect(response[:data].size).to eq(15)
+          
+          expect(response).to have_key(:totalHits)
+          expect(response).to have_key(:currentPage)
+          expect(response).to have_key(:pageList)
+          expect(response[:foods].size).to eq(50)
+          expect(response[:foods].first[:description]).to eq("SWEET POTATO")
         end
       end
     end
