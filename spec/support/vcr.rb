@@ -3,4 +3,5 @@ VCR.configure do |c|
   c.hook_into :webmock
   c.ignore_localhost = true
   c.ignore_hosts "chromedriver.storage.googleapis.com"
+  c.filter_sensitive_data('<FOOD_API>') { ENV["food_api"] }
 end
