@@ -16,11 +16,16 @@ RSpec.describe FoodService do
       response = FoodService.search_by_ingredient("sweet potatoes")
 
       expect(response).to be_a Hash
+
+      expect(response).to have_key :totalHits
+      expect(response[:totalHits]).to eq 45635
+
       expect(response).to have_key :foods
       expect(response[:foods].length).to eq 10
       expect(response[:foods]).to be_an Array
       expect(response[:foods].first).to be_a Hash
       expect(response[:foods].first[:description]).to eq "SWEET POTATOES"
+      expect(response[:foods].first[:ingredients]).to eq "SWEET POTATOES."
       expect(response[:foods].first[:brandOwner]).to eq "ARCHER FARMS"
       expect(response[:foods].first[:gtinUpc]).to eq "492111402857"
     end
