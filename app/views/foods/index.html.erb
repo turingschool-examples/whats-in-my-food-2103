@@ -1,0 +1,13 @@
+
+  <h3>Results for <%= params[:search_term] %>:</h3>
+  <<h4>Total Results: <%= @search_results.count %></h4>
+  <div id='results'>
+  <% @search_results.each do |food| %>
+    <div class="single-result">
+    <p>GTIN/UPC: <%= food.code %></p>
+    <p>Description: <%= food.description %></p>
+    <p>Brand Owner: <%= food.brand_owner %></p>
+    <p>Ingredients: <%= food.ingredients %></p>
+  </div>
+  <% end %>
+  </div>
