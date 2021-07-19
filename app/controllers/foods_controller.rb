@@ -5,5 +5,6 @@ class FoodsController < ApplicationController
         end
         response = conn.get("/fdc/v1/foods/search?query=#{params[:q]}")
         @results = JSON.parse(response.body, symbolize_names: true)
+        @foods = @results[:foods].first(10)
     end
 end

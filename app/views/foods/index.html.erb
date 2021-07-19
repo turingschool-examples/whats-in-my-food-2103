@@ -1,3 +1,9 @@
 <h1>MMMM FOODS</h1>
 
 <h3><%= @results[:totalHits] %> Results</h3>
+<% @foods.each do |food| %>
+    <p>GTIN/UPC code: <%= food[:gtinUpc]%></p>
+    <p>Description: <%= food[:lowercaseDescription]%></p>
+    <p>Brand owner: <%= food[:brandOwner]%></p>
+    <p>Ingredients: <%= food[:ingredients]%></p>
+<% end %>
