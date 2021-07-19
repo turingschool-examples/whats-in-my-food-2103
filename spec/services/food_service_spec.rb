@@ -2,10 +2,10 @@ require 'rails_helper'
 
 RSpec.describe FoodService do
   it 'can search food api' do
-    search_term = "sweet potato"
+    search_term = "sweet potatoes"
     response = File.read("#{Rails.root}/spec/fixtures/food_api/sweet_potato_10_results_search.json")
 
-    stub_request(:get, "https://api.nal.usda.gov/fdc/v1/foods/search?query=sweet potato&pageSize=10&api_key=#{ENV['FOOD_API_KEY']}").to_return(status: 200, body: response, headers: {})
+    stub_request(:get, "https://api.nal.usda.gov/fdc/v1/foods/search?api_key=#{ENV['FOOD_API_KEY']}&pageSize=10&query=sweet%20potatoes").to_return(status: 200, body: response, headers: {})
 
     service_response = FoodService.search_foods(search_term)
 

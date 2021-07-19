@@ -5,7 +5,7 @@ RSpec.describe 'as a user' do
     response = File.read("#{Rails.root}/spec/fixtures/food_api/sweet_potato_10_results_search.json")
     parsed_response = JSON.parse(response, symbolize_names: true)[:foods].first
 
-    stub_request(:get, "https://api.nal.usda.gov/fdc/v1/foods/search?query=sweet potato&pageSize=10&api_key=#{ENV['FOOD_API_KEY']}").to_return(status: 200, body: response, headers: {})
+    stub_request(:get, "https://api.nal.usda.gov/fdc/v1/foods/search?api_key=#{ENV['FOOD_API_KEY']}&pageSize=10&query=sweet%20potatoes").to_return(status: 200, body: response, headers: {})
 
     visit root_path
 
@@ -20,7 +20,7 @@ RSpec.describe 'as a user' do
     it 'and see 10 foods containing my search term' do
       expect(page).to have_css('single-result', count: 10)
     end
-    
+
     it 'for each food I should see details' do
       within(".single_result", match: :first) do
         expect(page).to have_content("GTIN/UPC Code: #{parsed_response[:gtinUpc]}")
