@@ -73,6 +73,8 @@ GEM
     docile (1.4.0)
     erubi (1.10.0)
     execjs (2.8.1)
+    faker (2.18.0)
+      i18n (>= 1.6, < 2)
     faraday (1.5.1)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
@@ -237,6 +239,7 @@ DEPENDENCIES
   bootsnap
   capybara
   coffee-rails (~> 4.2)
+  faker
   faraday
   figaro
   jbuilder (~> 2.5)
