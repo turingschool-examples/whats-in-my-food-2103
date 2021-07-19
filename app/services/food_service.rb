@@ -1,6 +1,6 @@
 class FoodService
   def self.get_food_data(search_food)
-    response = Faraday.get("https://api.nal.usda.gov/fdc/v1/foods/search") do |req| # ?stateCode=#{state}&api_key=#{ENV['nps_api']}
+    response = Faraday.get("https://api.nal.usda.gov/fdc/v1/foods/search") do |req|
       req.params['api_key'] = ENV['food_api']
       req.params[:query] = search_food
     end
