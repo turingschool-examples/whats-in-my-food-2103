@@ -1,5 +1,5 @@
 class FoodsController < ApplicationController
   def index
-    @foods = FoodsFacade.search_ingredient(params[:q])
+    @foods = FoodFacade.ingredient_search(params[:q])
   end
 end
