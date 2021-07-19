@@ -13,5 +13,6 @@ RSpec.describe 'FDC API' do
     expect(response[:foods].first[:description]).to eq('SWEET POTATOES')
     expect(response[:foods].first[:brandOwner]).to eq('ARCHER FARMS')
     expect(response[:foods].first[:ingredients]).to eq('SWEET POTATOES.')
+    expect(response[:foods].count).to eq(10)
   end
 end
