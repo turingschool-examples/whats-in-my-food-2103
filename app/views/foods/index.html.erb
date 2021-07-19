@@ -1,0 +1,12 @@
+<h1>Data on <%= @queried_food %></h1>
+
+<h2>Total search results for <%= @queried_food %> is: <%= @count_total_results %></h2>
+
+<section id="ten_food_results">
+  <% @found_foods.each do |food| %>
+    <div>GTIN/UPC code: <%= food.gtinUpc %></div><br/>
+    <p>Description: <%= food.description %></p><br/>
+    <p>Brand Owner: <%= food.brandOwner %></p><br/>
+    <p>Ingredient(s): <%= food.ingredients %></p><br/>
+  <% end %>
+</section>
