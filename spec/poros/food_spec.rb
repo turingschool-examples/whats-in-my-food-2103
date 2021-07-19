@@ -3,7 +3,8 @@ require 'rails_helper'
 RSpec.describe Food do
   before :each do
     json = File.read('./spec/fixtures/sweet_potato_search.json')
-    food_details = JSON.parse(json[:foods].first, symbolize_names: true)
+    foods = JSON.parse(json, symbolize_names: true)
+    food_details = foods[:foods].first
     @food = Food.new(food_details)  
   end
 
