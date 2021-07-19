@@ -28,7 +28,7 @@ module FoodsAPI
     end
 
     def self.parse_json
-      Oj.load(@response.body, symbol_keys: true)
+      JSON.load(@response.body, symbol_keys: true)
     end
 
     def self.response_successful?

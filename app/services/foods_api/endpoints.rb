@@ -4,6 +4,6 @@ module Endpoints
   end
 
   def find_foods_endpoint
-    '/foods/search'.freeze
+    'foods/search'.freeze
   end
 end
