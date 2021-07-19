@@ -1,10 +1,10 @@
-<h1>Your query found <%= @total_hits %> results for <%= @q %></h1>
+<h1>Your query found <%= @foods.total_hits %> results for <%= @q %></h1>
 
-<% @foods.each do |food| %>
-  <h4>Brand Owner: <%= food[:brand_owner]%></h4>
+<% @foods.foods.each do |food| %>
+  <h4>Brand Owner: <%= food.brand_owner %></h4>
   <ul>
-    <li>GTIN/UPC: <%= food[:gtin_upc] %></li>
-    <li>Description: <%= food[:description] %></li>
-    <li>Ingredients: <%= food[:ingredients] %></li>
+    <li>GTIN/UPC: <%= food.gtin_upc %></li>
+    <li>Description: <%= food.description %></li>
+    <li>Ingredients: <%= food.ingredients %></li>
   </ul>
 <% end %>
