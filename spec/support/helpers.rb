@@ -1,4 +1,3 @@
-
 module Helpers
   module APIHelpers
     def test_headers
