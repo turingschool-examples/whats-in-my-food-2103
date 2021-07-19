@@ -4,4 +4,5 @@ class FoodFacade
     response.map do |result|
       FoodPoro.new(result)
     end
+  end
 end
