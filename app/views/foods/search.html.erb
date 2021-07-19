@@ -1,0 +1,9 @@
+<h1><%= "You searched for #{@query}, with #{@hits} results" %></h1>
+<h2>Your Results</h2>
+<% @display_foods.each do |food| %>
+  <p><%= food.description %>
+  <%= food.brand %>
+  <%= food.ingredients %>
+  <%= food.code %></p>
+<% end %>
+
