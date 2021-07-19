@@ -7,9 +7,21 @@
           null
         ]
       },
-      "/Users/ldwha/Turing/3_mod/whats-in-my-food-2103/app/poros/food.rb": {
+      "/Users/ldwha/Turing/3_mod/whats-in-my-food-2103/app/facade/food_facade.rb": {
         "lines": [
           1,
+          1,
+          1,
+          1,
+          50,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/ldwha/Turing/3_mod/whats-in-my-food-2103/app/services/food_service.rb": {
+        "lines": [
           1,
           null,
           1,
@@ -22,22 +34,23 @@
           null
         ]
       },
+      "/Users/ldwha/Turing/3_mod/whats-in-my-food-2103/app/poros/food.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          50,
+          50,
+          50,
+          50,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/ldwha/Turing/3_mod/whats-in-my-food-2103/app/mailers/application_mailer.rb": {
         "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/ldwha/Turing/3_mod/whats-in-my-food-2103/app/facade/food_facade.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
           0,
           0,
           0,
@@ -94,22 +107,6 @@
         "branches": {
         }
       },
-      "/Users/ldwha/Turing/3_mod/whats-in-my-food-2103/app/services/food_service.rb": {
-        "lines": [
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/Users/ldwha/Turing/3_mod/whats-in-my-food-2103/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
@@ -131,6 +128,6 @@
         }
       }
     },
-    "timestamp": 1626712491
+    "timestamp": 1626712737
   }
 }
