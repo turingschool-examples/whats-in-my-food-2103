@@ -4,7 +4,7 @@ module Helpers
       {
         'Accept'=>'*/*',
         'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-        'User-Agent'=>'Faraday v1.5.0'
+        'User-Agent'=>'Faraday v1.5.1'
       }
     end
 
